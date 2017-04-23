@@ -1,35 +1,6 @@
-$blue:#4885ed;
-$red:#db3236;
-$yellow:#f4c20d;
-$green:#3cba54;
-$background:beige;
+@import "helper/variables";
+@import "helper/mixins";
 
-@mixin flex($flex,$center){
-  display:$flex;
-  justify-content:$center;
-  align-items:$center;
-  display:-webkit-$flex;
-  display:-ms-$flex;
-  display:$flex;
-  -webkit-justify-content:$center;
-  -ms-flex-pack:$center;
-  justify-content:$center;
-  -webkit-align-items:$center;
-  -ms-flex-align:$center;
-  align-items:$center;
-}
-@mixin shape($size){
-  width:$size;
-  height:$size;
-}
-@mixin border($style,$width,$border-top-color,$border-right-color,$border-bottom-color,$border-left-color){
-  border-style:$style;
-  border-width:$width;
-  border-top-color:$border-top-color;
-  border-right-color:$border-right-color;
-  border-bottom-color:$border-bottom-color;
-  border-left-color:$border-left-color;
-}
 body{
   background:$background;
   height:100vh;
